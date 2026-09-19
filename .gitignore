@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables / API keys
+.env
+.env.*
+
+# Uploaded resumes
+data/resumes/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# UiPath generated files
+uipath/**/.local/
+uipath/**/.project/
+uipath/**/.settings/
+uipath/**/.tmh/
+
+# UiPath generated response files
+uipath/**/*.json
