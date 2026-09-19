@@ -773,7 +773,7 @@
             try {
 
                 const response = await fetch(
-                    "http://127.0.0.1:8000/screen-resume",
+                    "https://hirelens-ai-backend-21ye.onrender.com/screen-resume",
                     {
                         method: "POST",
                         body: formData
@@ -805,8 +805,7 @@
                     <div class="error">
                         <strong>Unable to analyze resume.</strong>
                         <br><br>
-                        Make sure the FastAPI backend is running
-                        at <b>127.0.0.1:8000</b>.
+                        Make sure the backend is available and try again.<b></b>.
                     </div>
                 `;
 
