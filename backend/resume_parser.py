@@ -1,5 +1,6 @@
 from pypdf import PdfReader
 from docx import Document
+import re
 
 def extract_text_from_pdf(file_path):
     reader = PdfReader(file_path)
@@ -63,7 +64,9 @@ def extract_candidate_info(text):
     # Basic project detection
     projects = 0
 
-    if "project" in text_lower or "projects" in text_lower:
+    project_heading_pattern = r"(?m)^\s*(projects|academic projects|personal projects|project experience|projects experience)\s*$"
+
+    if re.search(project_heading_pattern, text_lower):
         projects = 1
 
     return {
