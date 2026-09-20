@@ -6,34 +6,44 @@ HireLens AI is an AI-assisted resume screening system that parses PDF/DOCX resum
 
 > ⚠️ **Portfolio Prototype:** The ML model is trained on a small synthetic dataset. Its score is a model output and should not be interpreted as a hiring probability or hiring decision.
 
-## 🚀 Live Demo
+---
 
-- **Live App:** https://hirelens-ai-orpin.vercel.app
-- **GitHub:** https://github.com/archisinha972-creator/AI-Resume-Screening
+## Demo
 
-## ✨ Features
+- **Live App:** [https://hirelens-ai-orpin.vercel.app](https://hirelens-ai-orpin.vercel.app)
+- **GitHub:** [https://github.com/archisinha972-creator/AI-Resume-Screening](https://github.com/archisinha972-creator/AI-Resume-Screening)
 
-- 📄 PDF & DOCX resume upload
-- 🔍 Resume text extraction
-- 🧠 Technical skill detection
-- 🤖 ML-based screening signal
-- ✨ Gemini AI recruiter assessment
-- ⚙️ UiPath candidate-screening automation
-- 🌐 Deployed web application
+---
 
-## ⚙️ How It Works
+## Features
 
-    Resume Upload
-          ↓
-    FastAPI Backend
-          ↓
-    Resume Parser
-          ↓
-    ML Model + Gemini AI
-          ↓
-    Candidate Assessment
+- PDF & DOCX resume upload
+- Resume text extraction
+- Technical skill detection
+- ML-based screening signal
+- Gemini AI recruiter assessment
+- UiPath candidate-screening automation
+- Deployed web application
 
-## 🛠️ Tech Stack
+---
+
+## How It Works
+
+```text
+Resume Upload
+      ↓
+FastAPI Backend
+      ↓
+Resume Parser
+      ↓
+ML Model + Gemini AI
+      ↓
+Candidate Assessment
+```
+
+---
+
+## Tech Stack
 
 | Category | Technologies |
 |---|---|
@@ -44,57 +54,85 @@ HireLens AI is an AI-assisted resume screening system that parses PDF/DOCX resum
 | Automation | UiPath, Excel |
 | Deployment | Vercel, Render |
 
-## 📂 Project Structure
+---
 
-    AI-Resume-Screening/
-    ├── agent/
-    ├── backend/
-    ├── data/
-    ├── frontend/
-    ├── ml/
-    ├── notebooks/
-    ├── uipath/
-    ├── requirements.txt
-    ├── render.yaml
-    └── README.md
+## Project Structure
 
-## 💻 Run Locally
+```text
+AI-Resume-Screening/
+├── agent/
+├── backend/
+├── data/
+├── frontend/
+├── ml/
+├── notebooks/
+├── uipath/
+├── requirements.txt
+├── render.yaml
+└── README.md
+```
 
-### 1. Clone the repository
+---
 
-    git clone https://github.com/archisinha972-creator/AI-Resume-Screening.git
-    cd AI-Resume-Screening
+## Run Locally
 
-### 2. Create virtual environment
+### 1. Clone the Repository
 
-    python -m venv venv
+```bash
+git clone https://github.com/archisinha972-creator/AI-Resume-Screening.git
+cd AI-Resume-Screening
+```
 
-### 3. Activate virtual environment
+### 2. Create a Virtual Environment
 
-    .\venv\Scripts\Activate.ps1
+```bash
+python -m venv venv
+```
 
-### 4. Install dependencies
+### 3. Activate the Virtual Environment
 
-    pip install -r requirements.txt
+**Windows PowerShell:**
 
-### 5. Set Gemini API key
+```powershell
+.\venv\Scripts\Activate.ps1
+```
 
-    $env:GEMINI_API_KEY="YOUR_API_KEY"
+### 4. Install Dependencies
 
-### 6. Start the backend
+```bash
+pip install -r requirements.txt
+```
 
-    uvicorn backend.main:app --reload
+### 5. Set the Gemini API Key
 
-API: http://127.0.0.1:8000
+**Windows PowerShell:**
 
-## ⚠️ Limitations
+```powershell
+$env:GEMINI_API_KEY="YOUR_API_KEY"
+```
+
+### 6. Start the Backend
+
+```bash
+uvicorn backend.main:app --reload
+```
+
+API:
+
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## Limitations
 
 - The ML model uses a small synthetic dataset.
 - Screening scores are prototype model outputs.
-- Gemini API usage depends on API availability and limits.
+- Gemini API usage depends on API availability and usage limits.
 - The system should not be used as an automated hiring decision system.
 
-## 🔮 Future Improvements
+---
+
+## Future Improvements
 
 - Larger and more diverse datasets
 - Job description analysis
@@ -103,7 +141,9 @@ API: http://127.0.0.1:8000
 - Recruiter dashboard
 - Authentication
 
-## 👩‍💻 Author
+---
+
+## Author
 
 **Archi Sinha**
 
@@ -111,4 +151,4 @@ CSE (AI & ML) — KIIT University
 
 ---
 
-⭐ If you found this project interesting, consider giving it a star!
+If you found this project interesting, consider giving it a star!
